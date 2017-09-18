@@ -1,4 +1,4 @@
-#!/usr/bin/end python3
+#!/usr/bin/env python3
 
 import json
 from urllib.request import urlopen
