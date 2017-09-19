@@ -69,7 +69,7 @@ def executeCommand(command, params, portfolio, coin_dict):
         print('Portfolio:')
         total = 0.0
         for coin, amt in portfolio.items():
-            print(coin, ':', amt)
+            print(coin, ':', amt, '($%.2f)' % (coin_dict[coin]*amt))
             total += coin_dict[coin] * amt
         print('Total: $%.2f' % total)
     if (command=='E' or command=='EXIT'):
